@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="167.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ControllerContacto">
+   <children>
+      <Separator layoutX="53.0" layoutY="13.0" prefWidth="200.0" />
+      <Separator layoutX="53.0" layoutY="145.0" prefWidth="200.0" />
+      <Label fx:id="lblTelefono" layoutX="39.0" layoutY="55.0" text="Telefono :" underline="true" />
+      <Label fx:id="lblFijo" layoutX="39.0" layoutY="86.0" text="Fijo :" underline="true" />
+      <Button fx:id="btnGuardarCambios" layoutX="39.0" layoutY="116.0" mnemonicParsing="false" onAction="#guardarCambiosAction" text="Guardar Cambios" underline="true" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="191.0" layoutY="116.0" mnemonicParsing="false" onAction="#cancelarAction" text="Cancelar" visible="false" />
+      <TextField fx:id="txtNombre" editable="false" layoutX="101.0" layoutY="22.0"  />
+      <TextField fx:id="txtTelefono" editable="false" layoutX="101.0" layoutY="51.0">
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtFijo" editable="false" layoutX="101.0" layoutY="82.0" />
+      <Label fx:id="lblNombre" layoutX="38.0" layoutY="26.0" text="Nombre" underline="true" />
+      <Button fx:id="btnEditar" layoutX="255.0" layoutY="51.0" mnemonicParsing="false" onAction="#editarAction" text="Editar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnCerrar" layoutX="140.0" layoutY="116.0" mnemonicParsing="false" onAction="#cerrarAction" text="Cerrar" underline="true" />
+      <Button fx:id="btnAgregar" layoutX="63.0" layoutY="116.0" mnemonicParsing="false" onAction="#agregarAction" text="Agregar" underline="true" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
